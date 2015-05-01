@@ -14,6 +14,7 @@
 		D05553101AF42F2500EEECC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D055530F1AF42F2500EEECC1 /* Images.xcassets */; };
 		D05553131AF42F2500EEECC1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05553111AF42F2500EEECC1 /* LaunchScreen.xib */; };
 		D055531F1AF42F2500EEECC1 /* TipsyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D055531E1AF42F2500EEECC1 /* TipsyTests.m */; };
+		D055532A1AF42F9400EEECC1 /* BACdata.m in Sources */ = {isa = PBXBuildFile; fileRef = D05553291AF42F9400EEECC1 /* BACdata.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,9 @@
 		D05553181AF42F2500EEECC1 /* TipsyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D055531D1AF42F2500EEECC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D055531E1AF42F2500EEECC1 /* TipsyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipsyTests.m; sourceTree = "<group>"; };
+		D05553281AF42F9400EEECC1 /* BACdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACdata.h; sourceTree = "<group>"; };
+		D05553291AF42F9400EEECC1 /* BACdata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACdata.m; sourceTree = "<group>"; };
+		D055532B1AF431F600EEECC1 /* Tipsy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Tipsy.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,9 @@
 		D05553011AF42F2500EEECC1 /* Tipsy */ = {
 			isa = PBXGroup;
 			children = (
+				D055532B1AF431F600EEECC1 /* Tipsy.entitlements */,
+				D05553281AF42F9400EEECC1 /* BACdata.h */,
+				D05553291AF42F9400EEECC1 /* BACdata.m */,
 				D05553061AF42F2500EEECC1 /* AppDelegate.h */,
 				D05553071AF42F2500EEECC1 /* AppDelegate.m */,
 				D05553091AF42F2500EEECC1 /* ViewController.h */,
@@ -168,6 +175,12 @@
 				TargetAttributes = {
 					D05552FE1AF42F2500EEECC1 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = C2NSPAKWYK;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					D05553171AF42F2500EEECC1 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -219,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D055532A1AF42F9400EEECC1 /* BACdata.m in Sources */,
 				D055530B1AF42F2500EEECC1 /* ViewController.m in Sources */,
 				D05553081AF42F2500EEECC1 /* AppDelegate.m in Sources */,
 				D05553051AF42F2500EEECC1 /* main.m in Sources */,
@@ -347,9 +361,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tipsy/Tipsy.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tipsy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -357,9 +375,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tipsy/Tipsy.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tipsy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
