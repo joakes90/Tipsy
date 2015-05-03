@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E9221954-6E5C-423A-9FBA-70480B239286</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Tipsy</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F84E624CFC3FEE24B5DE757B5F5077819ADB94A0</key>
+		<string>https://github.com/joakes90/Tipsy.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Tipsy.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F84E624CFC3FEE24B5DE757B5F5077819ADB94A0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/joakes90/Tipsy.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F84E624CFC3FEE24B5DE757B5F5077819ADB94A0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F84E624CFC3FEE24B5DE757B5F5077819ADB94A0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Tipsy</string>
+		</dict>
+	</array>
+</dict>
+</plist>
