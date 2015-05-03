@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D023E6661AF6CF9900B2F38C /* Lucida Calligraphy Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D023E6651AF6CF1500B2F38C /* Lucida Calligraphy Italic.ttf */; };
+		D023E6681AF6D3E500B2F38C /* AndaleMono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D023E6671AF6D3DA00B2F38C /* AndaleMono.ttf */; };
 		D05553051AF42F2500EEECC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D05553041AF42F2500EEECC1 /* main.m */; };
 		D05553081AF42F2500EEECC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D05553071AF42F2500EEECC1 /* AppDelegate.m */; };
 		D055530B1AF42F2500EEECC1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D055530A1AF42F2500EEECC1 /* ViewController.m */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D023E6651AF6CF1500B2F38C /* Lucida Calligraphy Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lucida Calligraphy Italic.ttf"; sourceTree = "<group>"; };
+		D023E6671AF6D3DA00B2F38C /* AndaleMono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AndaleMono.ttf; sourceTree = "<group>"; };
 		D05552FF1AF42F2500EEECC1 /* Tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05553031AF42F2500EEECC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D05553041AF42F2500EEECC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 		D05553021AF42F2500EEECC1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D023E6651AF6CF1500B2F38C /* Lucida Calligraphy Italic.ttf */,
+				D023E6671AF6D3DA00B2F38C /* AndaleMono.ttf */,
 				D05553031AF42F2500EEECC1 /* Info.plist */,
 				D05553041AF42F2500EEECC1 /* main.m */,
 			);
@@ -212,6 +218,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D023E6681AF6D3E500B2F38C /* AndaleMono.ttf in Resources */,
+				D023E6661AF6CF9900B2F38C /* Lucida Calligraphy Italic.ttf in Resources */,
 				D055530E1AF42F2500EEECC1 /* Main.storyboard in Resources */,
 				D05553131AF42F2500EEECC1 /* LaunchScreen.xib in Resources */,
 				D05553101AF42F2500EEECC1 /* Images.xcassets in Resources */,
@@ -438,6 +446,7 @@
 				D05553241AF42F2500EEECC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D05553251AF42F2500EEECC1 /* Build configuration list for PBXNativeTarget "TipsyTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +455,7 @@
 				D05553271AF42F2500EEECC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

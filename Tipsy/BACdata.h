@@ -17,4 +17,5 @@
 
 +(float)getCurrentBAC: (NSArray *)dataPointsArray;
 
+
 @end
