@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="AndaleMono.ttf">
@@ -43,26 +42,50 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="rCO-VH-jHV" firstAttribute="top" secondItem="SGh-la-Zr6" secondAttribute="bottom" constant="8" id="96F-J2-3bP"/>
-                                    <constraint firstAttribute="centerX" secondItem="rCO-VH-jHV" secondAttribute="centerX" id="bB5-Wq-8c5"/>
-                                    <constraint firstAttribute="centerX" secondItem="SGh-la-Zr6" secondAttribute="centerX" constant="0.5" id="iU6-Sc-7Iu"/>
-                                    <constraint firstItem="SGh-la-Zr6" firstAttribute="top" secondItem="xow-Yt-Y2v" secondAttribute="top" constant="18" id="lcW-hI-5pE"/>
+                                    <constraint firstAttribute="height" constant="110" id="Hzv-29-kws"/>
+                                    <constraint firstAttribute="centerX" secondItem="rCO-VH-jHV" secondAttribute="centerX" constant="-0.5" id="WdW-Ow-2eq"/>
+                                    <constraint firstItem="SGh-la-Zr6" firstAttribute="top" secondItem="xow-Yt-Y2v" secondAttribute="top" constant="18" id="arB-PY-6Yz"/>
+                                    <constraint firstAttribute="centerX" secondItem="SGh-la-Zr6" secondAttribute="centerX" constant="0.5" id="bZx-xj-rvB"/>
+                                    <constraint firstItem="rCO-VH-jHV" firstAttribute="top" secondItem="SGh-la-Zr6" secondAttribute="bottom" constant="8" id="yXX-c6-b1Y"/>
                                 </constraints>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xzr-va-SHq">
+                                <rect key="frame" x="0.0" y="109" width="375" height="549"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Iso-VH-8cL">
+                                    <size key="itemSize" width="170" height="170"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YGw-4m-eB6">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xow-Yt-Y2v" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="4fh-be-xVk"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xow-Yt-Y2v" secondAttribute="trailing" constant="-16" id="Ek2-ON-lI9"/>
-                            <constraint firstItem="xow-Yt-Y2v" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="QJu-qd-LwF"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="xow-Yt-Y2v" secondAttribute="bottom" constant="557" id="s6A-KP-4aE"/>
+                            <constraint firstAttribute="trailing" secondItem="xow-Yt-Y2v" secondAttribute="trailing" id="9uY-y8-v9a"/>
+                            <constraint firstItem="xow-Yt-Y2v" firstAttribute="trailing" secondItem="xzr-va-SHq" secondAttribute="trailing" id="DZt-ca-LQy"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="xzr-va-SHq" secondAttribute="bottom" constant="9" id="TjY-K1-m7P"/>
+                            <constraint firstItem="xzr-va-SHq" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="89" id="bfv-ZR-YqO"/>
+                            <constraint firstItem="xow-Yt-Y2v" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="dpT-wr-EIy"/>
+                            <constraint firstItem="xow-Yt-Y2v" firstAttribute="leading" secondItem="xzr-va-SHq" secondAttribute="leading" id="jWl-FR-6Mj"/>
+                            <constraint firstItem="xow-Yt-Y2v" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="xFs-JK-eaG"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="150.5" y="352.5"/>
+            <point key="canvasLocation" x="-90.5" y="350.5"/>
         </scene>
     </scenes>
 </document>
