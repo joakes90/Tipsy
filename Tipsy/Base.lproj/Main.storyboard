@@ -2,12 +2,19 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="AndaleMono.ttf">
             <string>AndaleMono</string>
+            <string>AndaleMono</string>
+            <string>AndaleMono</string>
+            <string>AndaleMono</string>
+            <string>AndaleMono</string>
+            <string>AndaleMono</string>
         </mutableArray>
         <mutableArray key="Lucida Calligraphy Italic.ttf">
+            <string>LucidaCalligraphy-Italic</string>
             <string>LucidaCalligraphy-Italic</string>
         </mutableArray>
     </customFonts>
@@ -30,7 +37,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipsy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGh-la-Zr6">
                                         <rect key="frame" x="162" y="18" width="50" height="24"/>
                                         <fontDescription key="fontDescription" name="LucidaCalligraphy-Italic" family="Lucida Calligraphy" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BAC 0.00%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCO-VH-jHV">
@@ -39,6 +46,16 @@
                                         <color key="textColor" red="0.43041832540037006" green="0.94872553661616166" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVd-B3-SC6">
+                                        <rect key="frame" x="337" y="18" width="30" height="34"/>
+                                        <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="24"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="4y1-U9-yFd" kind="show" id="Eei-7n-Hcw"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -46,6 +63,8 @@
                                     <constraint firstAttribute="centerX" secondItem="rCO-VH-jHV" secondAttribute="centerX" constant="-0.5" id="WdW-Ow-2eq"/>
                                     <constraint firstItem="SGh-la-Zr6" firstAttribute="top" secondItem="xow-Yt-Y2v" secondAttribute="top" constant="18" id="arB-PY-6Yz"/>
                                     <constraint firstAttribute="centerX" secondItem="SGh-la-Zr6" secondAttribute="centerX" constant="0.5" id="bZx-xj-rvB"/>
+                                    <constraint firstAttribute="trailing" secondItem="wVd-B3-SC6" secondAttribute="trailing" constant="8" id="rjp-eI-kYr"/>
+                                    <constraint firstItem="wVd-B3-SC6" firstAttribute="top" secondItem="xow-Yt-Y2v" secondAttribute="top" constant="18" id="xWu-1C-lBU"/>
                                     <constraint firstItem="rCO-VH-jHV" firstAttribute="top" secondItem="SGh-la-Zr6" secondAttribute="bottom" constant="8" id="yXX-c6-b1Y"/>
                                 </constraints>
                             </view>
@@ -85,7 +104,142 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-90.5" y="350.5"/>
+            <point key="canvasLocation" x="-91.5" y="310.5"/>
+        </scene>
+        <!--First Run View Controller-->
+        <scene sceneID="AtD-8p-ikn">
+            <objects>
+                <viewController id="4y1-U9-yFd" customClass="FirstRunViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SNq-J2-MS6"/>
+                        <viewControllerLayoutGuide type="bottom" id="imU-fY-BeT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fEX-9C-NhA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7A8-99-tij">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipsy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tm-r9-6rC">
+                                        <rect key="frame" x="162" y="18" width="51" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="51" id="ptJ-N4-heF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LucidaCalligraphy-Italic" family="Lucida Calligraphy" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BAC 0.00%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGF-GI-dUa">
+                                        <rect key="frame" x="142" y="50" width="93" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="93" id="uoM-is-8gU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="17"/>
+                                        <color key="textColor" red="0.43041832540000002" green="0.94872553660000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="2gC-aP-lXF"/>
+                                    <constraint firstItem="2tm-r9-6rC" firstAttribute="top" secondItem="7A8-99-tij" secondAttribute="top" constant="18" id="C1k-Ug-1T8"/>
+                                    <constraint firstAttribute="centerX" secondItem="2tm-r9-6rC" secondAttribute="centerX" constant="0.5" id="Nwx-iA-iyJ"/>
+                                    <constraint firstAttribute="centerX" secondItem="fGF-GI-dUa" secondAttribute="centerX" constant="-0.5" id="WPL-zz-tBZ"/>
+                                    <constraint firstItem="fGF-GI-dUa" firstAttribute="top" secondItem="2tm-r9-6rC" secondAttribute="bottom" constant="8" id="tSh-bS-85N"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Tipsy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFF-1b-nbN">
+                                <rect key="frame" x="72" y="118" width="231" height="22"/>
+                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lets set up a few things to get started" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1JO-I3-qnI">
+                                <rect key="frame" x="44" y="148" width="287" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="1a2-fm-hkv"/>
+                                    <constraint firstAttribute="width" constant="287" id="VKU-pM-mDP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sex" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lit-Ce-oT2">
+                                <rect key="frame" x="16" y="226" width="30" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7IT-0S-52Q">
+                                <rect key="frame" x="309" y="221" width="51" height="31"/>
+                                <color key="onTintColor" red="1" green="0.42226804319784139" blue="0.82520596114641798" alpha="1" colorSpace="calibratedRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M/F" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fb8-gr-hUW">
+                                <rect key="frame" x="319" y="197" width="31" height="16"/>
+                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xb-RJ-Fbg">
+                                <rect key="frame" x="16" y="287" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight in pounds" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="612-81-Dg2">
+                                <rect key="frame" x="224" y="283" width="134" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ag-yr-0kY">
+                                <rect key="frame" x="124" y="629" width="126" height="30"/>
+                                <state key="normal" title="Add default drinks">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="7IT-0S-52Q" firstAttribute="centerX" secondItem="Fb8-gr-hUW" secondAttribute="centerX" id="0c9-MU-BUf"/>
+                            <constraint firstItem="uFF-1b-nbN" firstAttribute="centerX" secondItem="7A8-99-tij" secondAttribute="centerX" id="13Z-zJ-BzJ"/>
+                            <constraint firstItem="uFF-1b-nbN" firstAttribute="top" secondItem="7A8-99-tij" secondAttribute="bottom" constant="8" id="1Ig-fE-ZPz"/>
+                            <constraint firstItem="7IT-0S-52Q" firstAttribute="centerY" secondItem="Lit-Ce-oT2" secondAttribute="centerY" id="4M1-gv-Fsu"/>
+                            <constraint firstAttribute="trailing" secondItem="7A8-99-tij" secondAttribute="trailing" id="7w0-Kc-KlB"/>
+                            <constraint firstItem="Lit-Ce-oT2" firstAttribute="leading" secondItem="fEX-9C-NhA" secondAttribute="leadingMargin" id="Dpj-zP-QaT"/>
+                            <constraint firstAttribute="centerX" secondItem="8ag-yr-0kY" secondAttribute="centerX" constant="0.5" id="FVJ-hm-22R"/>
+                            <constraint firstItem="612-81-Dg2" firstAttribute="trailing" secondItem="fEX-9C-NhA" secondAttribute="trailingMargin" id="OCU-36-zBG"/>
+                            <constraint firstItem="612-81-Dg2" firstAttribute="centerY" secondItem="3Xb-RJ-Fbg" secondAttribute="centerY" constant="0.5" id="UUa-DJ-k6B"/>
+                            <constraint firstItem="7A8-99-tij" firstAttribute="top" secondItem="fEX-9C-NhA" secondAttribute="top" id="bVn-fN-tMD"/>
+                            <constraint firstItem="imU-fY-BeT" firstAttribute="top" secondItem="8ag-yr-0kY" secondAttribute="bottom" constant="8" id="c3X-v2-EhA"/>
+                            <constraint firstItem="7IT-0S-52Q" firstAttribute="trailing" secondItem="fEX-9C-NhA" secondAttribute="trailingMargin" id="gjd-iT-zKD"/>
+                            <constraint firstItem="3Xb-RJ-Fbg" firstAttribute="top" secondItem="Lit-Ce-oT2" secondAttribute="bottom" constant="40" id="i2Z-et-q6o"/>
+                            <constraint firstItem="uFF-1b-nbN" firstAttribute="centerX" secondItem="1JO-I3-qnI" secondAttribute="centerX" id="i3k-GB-W9T"/>
+                            <constraint firstItem="Lit-Ce-oT2" firstAttribute="top" secondItem="1JO-I3-qnI" secondAttribute="bottom" constant="37" id="mRz-BE-oJA"/>
+                            <constraint firstItem="3Xb-RJ-Fbg" firstAttribute="leading" secondItem="fEX-9C-NhA" secondAttribute="leadingMargin" id="nVt-Nj-jdR"/>
+                            <constraint firstItem="7A8-99-tij" firstAttribute="leading" secondItem="fEX-9C-NhA" secondAttribute="leading" id="pFP-7I-W0d"/>
+                            <constraint firstItem="7IT-0S-52Q" firstAttribute="top" secondItem="Fb8-gr-hUW" secondAttribute="bottom" constant="8" id="wo3-tF-Adg"/>
+                            <constraint firstItem="1JO-I3-qnI" firstAttribute="top" secondItem="uFF-1b-nbN" secondAttribute="bottom" constant="8" id="xy2-Py-PeR"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="kbL-c4-dZX" appends="YES" id="0P1-n9-dtc"/>
+                        </connections>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="sexSwitch" destination="7IT-0S-52Q" id="Dz0-lb-II3"/>
+                        <outlet property="weightTextField" destination="612-81-Dg2" id="5Om-6k-6U8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lce-lV-HbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="kbL-c4-dZX">
+                    <connections>
+                        <action selector="receavedTap:" destination="4y1-U9-yFd" id="aaT-re-Dav"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-91.5" y="1056.5"/>
         </scene>
     </scenes>
 </document>

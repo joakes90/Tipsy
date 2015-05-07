@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D023E6661AF6CF9900B2F38C /* Lucida Calligraphy Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D023E6651AF6CF1500B2F38C /* Lucida Calligraphy Italic.ttf */; };
 		D023E6681AF6D3E500B2F38C /* AndaleMono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D023E6671AF6D3DA00B2F38C /* AndaleMono.ttf */; };
+		D042D7361AFC18CA0079A0C0 /* FirstRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D042D7351AFC18CA0079A0C0 /* FirstRunViewController.m */; };
 		D05553051AF42F2500EEECC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D05553041AF42F2500EEECC1 /* main.m */; };
 		D05553081AF42F2500EEECC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D05553071AF42F2500EEECC1 /* AppDelegate.m */; };
 		D055530B1AF42F2500EEECC1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D055530A1AF42F2500EEECC1 /* ViewController.m */; };
@@ -16,7 +17,6 @@
 		D05553101AF42F2500EEECC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D055530F1AF42F2500EEECC1 /* Images.xcassets */; };
 		D05553131AF42F2500EEECC1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05553111AF42F2500EEECC1 /* LaunchScreen.xib */; };
 		D055531F1AF42F2500EEECC1 /* TipsyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D055531E1AF42F2500EEECC1 /* TipsyTests.m */; };
-		D055532A1AF42F9400EEECC1 /* BACdata.m in Sources */ = {isa = PBXBuildFile; fileRef = D05553291AF42F9400EEECC1 /* BACdata.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +32,8 @@
 /* Begin PBXFileReference section */
 		D023E6651AF6CF1500B2F38C /* Lucida Calligraphy Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lucida Calligraphy Italic.ttf"; sourceTree = "<group>"; };
 		D023E6671AF6D3DA00B2F38C /* AndaleMono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AndaleMono.ttf; sourceTree = "<group>"; };
+		D042D7341AFC18CA0079A0C0 /* FirstRunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstRunViewController.h; sourceTree = "<group>"; };
+		D042D7351AFC18CA0079A0C0 /* FirstRunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstRunViewController.m; sourceTree = "<group>"; };
 		D05552FF1AF42F2500EEECC1 /* Tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05553031AF42F2500EEECC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D05553041AF42F2500EEECC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,8 +47,6 @@
 		D05553181AF42F2500EEECC1 /* TipsyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D055531D1AF42F2500EEECC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D055531E1AF42F2500EEECC1 /* TipsyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipsyTests.m; sourceTree = "<group>"; };
-		D05553281AF42F9400EEECC1 /* BACdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACdata.h; sourceTree = "<group>"; };
-		D05553291AF42F9400EEECC1 /* BACdata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACdata.m; sourceTree = "<group>"; };
 		D055532B1AF431F600EEECC1 /* Tipsy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Tipsy.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,10 +90,10 @@
 			isa = PBXGroup;
 			children = (
 				D055532B1AF431F600EEECC1 /* Tipsy.entitlements */,
-				D05553281AF42F9400EEECC1 /* BACdata.h */,
-				D05553291AF42F9400EEECC1 /* BACdata.m */,
 				D05553061AF42F2500EEECC1 /* AppDelegate.h */,
 				D05553071AF42F2500EEECC1 /* AppDelegate.m */,
+				D042D7341AFC18CA0079A0C0 /* FirstRunViewController.h */,
+				D042D7351AFC18CA0079A0C0 /* FirstRunViewController.m */,
 				D05553091AF42F2500EEECC1 /* ViewController.h */,
 				D055530A1AF42F2500EEECC1 /* ViewController.m */,
 				D055530C1AF42F2500EEECC1 /* Main.storyboard */,
@@ -240,10 +240,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D055532A1AF42F9400EEECC1 /* BACdata.m in Sources */,
 				D055530B1AF42F2500EEECC1 /* ViewController.m in Sources */,
 				D05553081AF42F2500EEECC1 /* AppDelegate.m in Sources */,
 				D05553051AF42F2500EEECC1 /* main.m in Sources */,
+				D042D7361AFC18CA0079A0C0 /* FirstRunViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
