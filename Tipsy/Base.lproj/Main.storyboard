@@ -190,7 +190,7 @@
                                 </state>
                                 <connections>
                                     <action selector="setUpApp:" destination="4y1-U9-yFd" eventType="touchUpInside" id="vh8-Q1-xWl"/>
-                                    <segue destination="oZ9-EB-eAU" kind="unwind" unwindAction="unwindToMainMenu:" id="C4s-cl-RYY"/>
+                                    <segue destination="oZ9-EB-eAU" kind="unwind" unwindAction="unwindToMainView:" id="ick-61-cNY"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "DrinksController.h"
 
 @interface MainViewController ()
 
@@ -28,12 +29,10 @@ static NSString const *weightKey = @"weightKey";
 - (void)viewDidAppear:(BOOL)animated{
     
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.oklasoft.tipsy"];
-    bool firstRun = [defaults boolForKey:setUpKey];
+    bool firstRun = [defaults boolForKey:[NSString stringWithFormat:@"%@", setUpKey]];
     
     if (!firstRun) {
         [self performSegueWithIdentifier:@"firstRunSegue" sender:self];
-    } else {
-        NSLog(@"Sex Bool: %d Weight Float: %.3f Setup Bool: %d", [defaults boolForKey:sexSwitchKey], [defaults floatForKey:weightKey], [defaults boolForKey:setUpKey]);
     }
 }
 
