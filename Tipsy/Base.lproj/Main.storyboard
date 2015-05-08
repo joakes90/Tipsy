@@ -76,8 +76,8 @@
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="Iso-VH-8cL" id="zSL-rr-GQc"/>
-                                    <outlet property="delegate" destination="Iso-VH-8cL" id="pKj-cN-Fw7"/>
+                                    <outlet property="dataSource" destination="T0z-kn-WgQ" id="kLF-tI-qNb"/>
+                                    <outlet property="delegate" destination="T0z-kn-WgQ" id="gyC-Fk-E1e"/>
                                 </connections>
                             </collectionView>
                         </subviews>

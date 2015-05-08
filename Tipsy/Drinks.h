@@ -8,11 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+@import UIKit;
+
 @interface Drinks : NSObject
 
 @property float alcaholContent;
 @property float volumeInOunces;
 @property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) UIImage *image;
 
 -(instancetype) initWithName:(NSString *)name proof:(float)proof AndVolumeInOunces:(float)volume;
 

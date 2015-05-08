@@ -17,6 +17,16 @@
         self.name = name;
         self.alcaholContent = proof / 2;
         self.volumeInOunces = volume;
+        
+        if ([name isEqualToString:@"Low Point Beer"] || [name isEqualToString:@"High Point Beer"]) {
+            self.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"beer" ofType:@"png"]];
+        } else if ([name isEqualToString:@"Whiskey"]){
+            self.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"whiskey" ofType:@"png"]];
+        } else if ([name isEqualToString:@"Rum"]){
+            self.image = [[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"rum" ofType:@"png"]]];
+        } else {
+            self.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"vodka" ofType:@"png"]];
+        }
     }
     return self;
 }

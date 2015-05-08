@@ -34,9 +34,9 @@
     
     Drinks *beerLow = [[Drinks alloc] initWithName:@"Low Point Beer" proof:8.11 AndVolumeInOunces:12];
     Drinks *beerHigh = [[Drinks alloc] initWithName:@"High Point Beer" proof:12.0 AndVolumeInOunces:12.0];
-    Drinks *vodka = [[Drinks alloc] initWithName:@"Vodka Shot" proof:80.0 AndVolumeInOunces:1.0];
-    Drinks *whiskey = [[Drinks alloc] initWithName:@"Whiskey Shot" proof:80.0 AndVolumeInOunces:1.0];
-    Drinks *rum = [[Drinks alloc] initWithName:@"Rum Shot" proof:75.0 AndVolumeInOunces:1.0];
+    Drinks *vodka = [[Drinks alloc] initWithName:@"Vodka" proof:80.0 AndVolumeInOunces:1.0];
+    Drinks *whiskey = [[Drinks alloc] initWithName:@"Whiskey" proof:80.0 AndVolumeInOunces:1.0];
+    Drinks *rum = [[Drinks alloc] initWithName:@"Rum" proof:75.0 AndVolumeInOunces:1.0];
     
     NSMutableArray *returnArray = [NSMutableArray arrayWithObjects:beerLow, beerHigh, vodka, whiskey, rum, nil];
     

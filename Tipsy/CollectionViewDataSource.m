@@ -7,15 +7,17 @@
 //
 
 #import "CollectionViewDataSource.h"
+#import "DrinksController.h"
 
 @implementation CollectionViewDataSource
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    
+
+    return [DrinksController sharedInstance].uniqueDrinks.count;
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    
+
 }
 
 @end
