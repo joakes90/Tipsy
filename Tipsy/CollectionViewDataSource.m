@@ -8,6 +8,7 @@
 
 #import "CollectionViewDataSource.h"
 #import "DrinksController.h"
+#import "CollectionViewCell.h"
 
 @implementation CollectionViewDataSource
 
@@ -17,7 +18,9 @@
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-
+    CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    
+    return cell;
 }
 
 @end
