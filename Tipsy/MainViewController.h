@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MainViewController : UIViewController
 
-- (IBAction)unwindToMainMenu:(UIStoryboardSegue*)sender;
+- (IBAction)unwindToMainView:(UIStoryboardSegue*)sender;
 @end
 

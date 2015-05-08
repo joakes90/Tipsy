@@ -6,14 +6,14 @@
 //  Copyright (c) 2015 Oklasoft. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MainViewController.h"
 
-@interface ViewController ()
+@interface MainViewController ()
 
 @property UIView *setUpView;
 @end
 
-@implementation ViewController
+@implementation MainViewController
 
 static NSString const *sexSwitchKey = @"sexKey";
 static NSString const *setUpKey = @"setUp";
@@ -43,7 +43,7 @@ static NSString const *weightKey = @"weightKey";
 
 }
 
-- (IBAction)unwindToMainMenu:(UIStoryboardSegue*)sender{
+- (IBAction)unwindToMainView:(UIStoryboardSegue*)sender{
     
 }
     
