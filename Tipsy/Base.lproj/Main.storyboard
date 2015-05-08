@@ -59,20 +59,50 @@
                                 <rect key="frame" x="0.0" y="109" width="375" height="558"/>
                                 <color key="backgroundColor" red="0.32941176470588235" green="0.83529411764705885" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Iso-VH-8cL">
-                                    <size key="itemSize" width="170" height="170"/>
+                                    <size key="itemSize" width="180" height="180"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YGw-4m-eB6">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="YGw-4m-eB6" customClass="CollectionViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rWI-mc-gqn">
+                                                    <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxo-u0-tVN">
+                                                    <rect key="frame" x="8" y="141" width="154" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="rWI-mc-gqn" firstAttribute="centerX" secondItem="Oxo-u0-tVN" secondAttribute="centerX" id="9hz-4t-tPK"/>
+                                            <constraint firstItem="Oxo-u0-tVN" firstAttribute="leading" secondItem="YGw-4m-eB6" secondAttribute="leadingMargin" id="CPA-KK-NkW"/>
+                                            <constraint firstAttribute="bottom" secondItem="rWI-mc-gqn" secondAttribute="bottom" id="Cze-KO-R4n"/>
+                                            <constraint firstItem="rWI-mc-gqn" firstAttribute="leading" secondItem="YGw-4m-eB6" secondAttribute="leading" id="XaX-sq-XYg"/>
+                                            <constraint firstItem="rWI-mc-gqn" firstAttribute="top" secondItem="YGw-4m-eB6" secondAttribute="top" id="g1R-my-qFy"/>
+                                            <constraint firstItem="Oxo-u0-tVN" firstAttribute="trailing" secondItem="YGw-4m-eB6" secondAttribute="trailingMargin" id="idX-IH-Z7T"/>
+                                            <constraint firstItem="Oxo-u0-tVN" firstAttribute="bottom" secondItem="YGw-4m-eB6" secondAttribute="bottomMargin" id="l7C-3u-dg9"/>
+                                            <constraint firstItem="rWI-mc-gqn" firstAttribute="centerX" secondItem="Oxo-u0-tVN" secondAttribute="centerX" id="rka-qs-F7m"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="rka-qs-F7m"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <outlet property="imageView" destination="rWI-mc-gqn" id="k63-MU-nCK"/>
+                                            <outlet property="label" destination="Oxo-u0-tVN" id="bo2-d1-GVm"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -100,7 +130,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <customObject id="T0z-kn-WgQ" customClass="CollectionViewDataSource"/>
             </objects>
-            <point key="canvasLocation" x="-91.5" y="310.5"/>
+            <point key="canvasLocation" x="-810.5" y="168.5"/>
         </scene>
         <!--First Run View Controller-->
         <scene sceneID="AtD-8p-ikn">
@@ -240,7 +270,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-91.5" y="1100.5"/>
+            <point key="canvasLocation" x="-810.5" y="958.5"/>
         </scene>
     </scenes>
 </document>

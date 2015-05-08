@@ -23,7 +23,7 @@
         } else if ([name isEqualToString:@"Whiskey"]){
             self.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"whiskey" ofType:@"png"]];
         } else if ([name isEqualToString:@"Rum"]){
-            self.image = [[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"rum" ofType:@"png"]]];
+            self.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"rum" ofType:@"png"]];
         } else {
             self.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"vodka" ofType:@"png"]];
         }
