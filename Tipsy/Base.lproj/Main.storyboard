@@ -75,6 +75,10 @@
                                         </view>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Iso-VH-8cL" id="zSL-rr-GQc"/>
+                                    <outlet property="delegate" destination="Iso-VH-8cL" id="pKj-cN-Fw7"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -94,6 +98,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <customObject id="T0z-kn-WgQ" customClass="CollectionViewDataSource"/>
             </objects>
             <point key="canvasLocation" x="-91.5" y="310.5"/>
         </scene>

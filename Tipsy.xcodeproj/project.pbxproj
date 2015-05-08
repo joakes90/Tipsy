@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D01DD3071AFD4A72008AF963 /* Drinks.m in Sources */ = {isa = PBXBuildFile; fileRef = D01DD3061AFD4A72008AF963 /* Drinks.m */; };
 		D01DD30A1AFD4E9C008AF963 /* DrinksController.m in Sources */ = {isa = PBXBuildFile; fileRef = D01DD3091AFD4E9C008AF963 /* DrinksController.m */; };
+		D01DD30D1AFD5F03008AF963 /* CollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D01DD30C1AFD5F03008AF963 /* CollectionViewDataSource.m */; };
 		D023E6661AF6CF9900B2F38C /* Lucida Calligraphy Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D023E6651AF6CF1500B2F38C /* Lucida Calligraphy Italic.ttf */; };
 		D023E6681AF6D3E500B2F38C /* AndaleMono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D023E6671AF6D3DA00B2F38C /* AndaleMono.ttf */; };
 		D042D7361AFC18CA0079A0C0 /* FirstRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D042D7351AFC18CA0079A0C0 /* FirstRunViewController.m */; };
@@ -36,6 +37,8 @@
 		D01DD3061AFD4A72008AF963 /* Drinks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drinks.m; sourceTree = "<group>"; };
 		D01DD3081AFD4E9C008AF963 /* DrinksController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinksController.h; sourceTree = "<group>"; };
 		D01DD3091AFD4E9C008AF963 /* DrinksController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinksController.m; sourceTree = "<group>"; };
+		D01DD30B1AFD5F03008AF963 /* CollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewDataSource.h; sourceTree = "<group>"; };
+		D01DD30C1AFD5F03008AF963 /* CollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewDataSource.m; sourceTree = "<group>"; };
 		D023E6651AF6CF1500B2F38C /* Lucida Calligraphy Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lucida Calligraphy Italic.ttf"; sourceTree = "<group>"; };
 		D023E6671AF6D3DA00B2F38C /* AndaleMono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AndaleMono.ttf; sourceTree = "<group>"; };
 		D042D7341AFC18CA0079A0C0 /* FirstRunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstRunViewController.h; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 				D05553091AF42F2500EEECC1 /* MainViewController.h */,
 				D055530A1AF42F2500EEECC1 /* MainViewController.m */,
 				D055530C1AF42F2500EEECC1 /* Main.storyboard */,
+				D01DD30B1AFD5F03008AF963 /* CollectionViewDataSource.h */,
+				D01DD30C1AFD5F03008AF963 /* CollectionViewDataSource.m */,
 				D055530F1AF42F2500EEECC1 /* Images.xcassets */,
 				D05553111AF42F2500EEECC1 /* LaunchScreen.xib */,
 				D05553021AF42F2500EEECC1 /* Supporting Files */,
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D01DD30D1AFD5F03008AF963 /* CollectionViewDataSource.m in Sources */,
 				D055530B1AF42F2500EEECC1 /* MainViewController.m in Sources */,
 				D05553081AF42F2500EEECC1 /* AppDelegate.m in Sources */,
 				D05553051AF42F2500EEECC1 /* main.m in Sources */,
