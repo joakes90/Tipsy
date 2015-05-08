@@ -15,11 +15,26 @@
 
 @implementation ViewController
 
+static NSString const *sexSwitchKey = @"sexKey";
+static NSString const *setUpKey = @"setUp";
+static NSString const *weightKey = @"weightKey";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    bool firstRun = [[NSUserDefaults standardUserDefaults] boolForKey:@"firstRun"];
 
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.oklasoft.tipsy"];
+    bool firstRun = [defaults boolForKey:setUpKey];
+    
+    if (!firstRun) {
+        [self performSegueWithIdentifier:@"firstRunSegue" sender:self];
+    } else {
+        NSLog(@"Sex Bool: %d Weight Float: %.3f Setup Bool: %d", [defaults boolForKey:sexSwitchKey], [defaults floatForKey:weightKey], [defaults boolForKey:setUpKey]);
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,6 +42,11 @@
     // Dispose of any resources that can be recreated.
 
 }
+
+- (IBAction)unwindToMainMenu:(UIStoryboardSegue*)sender{
+    
+}
+    
 
 
 

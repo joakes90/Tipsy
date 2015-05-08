@@ -10,9 +10,15 @@
 
 @interface FirstRunViewController ()
 
+
+
 @end
 
 @implementation FirstRunViewController
+
+static NSString const *sexSwitchKey = @"sexKey";
+static NSString const *setUpKey = @"setUp";
+static NSString const *weightKey = @"weightKey";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,6 +41,14 @@
 */
 - (IBAction)receavedTap:(id)sender {
     [self.weightTextField resignFirstResponder];
+}
+
+- (IBAction)setUpApp:(id)sender {
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.oklasoft.tipsy"];
+    
+    [defaults setBool:self.sexSwitch.on forKey:sexSwitchKey];
+    [defaults setFloat:[self.weightTextField.text floatValue] forKey:weightKey];
+    [defaults setBool:YES forKey:setUpKey];
 }
 
 @end
