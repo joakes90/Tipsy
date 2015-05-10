@@ -20,6 +20,11 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     
+    Drinks *drinkForRow = [DrinksController sharedInstance].uniqueDrinks[indexPath.row];
+    
+    cell.label.text = drinkForRow.name;
+    cell.imageView.image = drinkForRow.image;
+    
     return cell;
 }
 

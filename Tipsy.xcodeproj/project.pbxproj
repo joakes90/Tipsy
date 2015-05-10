@@ -20,10 +20,10 @@
 		D05553101AF42F2500EEECC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D055530F1AF42F2500EEECC1 /* Images.xcassets */; };
 		D05553131AF42F2500EEECC1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05553111AF42F2500EEECC1 /* LaunchScreen.xib */; };
 		D055531F1AF42F2500EEECC1 /* TipsyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D055531E1AF42F2500EEECC1 /* TipsyTests.m */; };
-		D0FFEBCC1AFD6BC800CFCBAF /* beer.png in Resources */ = {isa = PBXBuildFile; fileRef = D0FFEBC81AFD6BC800CFCBAF /* beer.png */; };
-		D0FFEBCD1AFD6BC800CFCBAF /* rum.png in Resources */ = {isa = PBXBuildFile; fileRef = D0FFEBC91AFD6BC800CFCBAF /* rum.png */; };
-		D0FFEBCE1AFD6BC800CFCBAF /* vokda.png in Resources */ = {isa = PBXBuildFile; fileRef = D0FFEBCA1AFD6BC800CFCBAF /* vokda.png */; };
-		D0FFEBCF1AFD6BC800CFCBAF /* whiskey.png in Resources */ = {isa = PBXBuildFile; fileRef = D0FFEBCB1AFD6BC800CFCBAF /* whiskey.png */; };
+		D0BDB1631AFF16990031EDED /* rum.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BDB15F1AFF16990031EDED /* rum.png */; };
+		D0BDB1651AFF16990031EDED /* whiskey.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BDB1611AFF16990031EDED /* whiskey.png */; };
+		D0BDB1671AFF18510031EDED /* beer.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BDB1661AFF18510031EDED /* beer.png */; };
+		D0BDB1691AFF18CA0031EDED /* vodka.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BDB1681AFF18CA0031EDED /* vodka.png */; };
 		D0FFEBD21AFD71DE00CFCBAF /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FFEBD11AFD71DE00CFCBAF /* CollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -62,10 +62,10 @@
 		D055531D1AF42F2500EEECC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D055531E1AF42F2500EEECC1 /* TipsyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipsyTests.m; sourceTree = "<group>"; };
 		D055532B1AF431F600EEECC1 /* Tipsy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Tipsy.entitlements; sourceTree = "<group>"; };
-		D0FFEBC81AFD6BC800CFCBAF /* beer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beer.png; sourceTree = "<group>"; };
-		D0FFEBC91AFD6BC800CFCBAF /* rum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rum.png; sourceTree = "<group>"; };
-		D0FFEBCA1AFD6BC800CFCBAF /* vokda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vokda.png; sourceTree = "<group>"; };
-		D0FFEBCB1AFD6BC800CFCBAF /* whiskey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiskey.png; sourceTree = "<group>"; };
+		D0BDB15F1AFF16990031EDED /* rum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rum.png; sourceTree = "<group>"; };
+		D0BDB1611AFF16990031EDED /* whiskey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiskey.png; sourceTree = "<group>"; };
+		D0BDB1661AFF18510031EDED /* beer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beer.png; sourceTree = "<group>"; };
+		D0BDB1681AFF18CA0031EDED /* vodka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vodka.png; sourceTree = "<group>"; };
 		D0FFEBD01AFD71DE00CFCBAF /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		D0FFEBD11AFD71DE00CFCBAF /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,10 +164,10 @@
 		D0FFEBC71AFD6BB200CFCBAF /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				D0FFEBC81AFD6BC800CFCBAF /* beer.png */,
-				D0FFEBC91AFD6BC800CFCBAF /* rum.png */,
-				D0FFEBCA1AFD6BC800CFCBAF /* vokda.png */,
-				D0FFEBCB1AFD6BC800CFCBAF /* whiskey.png */,
+				D0BDB1661AFF18510031EDED /* beer.png */,
+				D0BDB1681AFF18CA0031EDED /* vodka.png */,
+				D0BDB15F1AFF16990031EDED /* rum.png */,
+				D0BDB1611AFF16990031EDED /* whiskey.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -259,14 +259,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D023E6681AF6D3E500B2F38C /* AndaleMono.ttf in Resources */,
-				D0FFEBCE1AFD6BC800CFCBAF /* vokda.png in Resources */,
+				D0BDB1671AFF18510031EDED /* beer.png in Resources */,
 				D023E6661AF6CF9900B2F38C /* Lucida Calligraphy Italic.ttf in Resources */,
 				D055530E1AF42F2500EEECC1 /* Main.storyboard in Resources */,
 				D05553131AF42F2500EEECC1 /* LaunchScreen.xib in Resources */,
-				D0FFEBCF1AFD6BC800CFCBAF /* whiskey.png in Resources */,
+				D0BDB1651AFF16990031EDED /* whiskey.png in Resources */,
+				D0BDB1691AFF18CA0031EDED /* vodka.png in Resources */,
 				D05553101AF42F2500EEECC1 /* Images.xcassets in Resources */,
-				D0FFEBCC1AFD6BC800CFCBAF /* beer.png in Resources */,
-				D0FFEBCD1AFD6BC800CFCBAF /* rum.png in Resources */,
+				D0BDB1631AFF16990031EDED /* rum.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
